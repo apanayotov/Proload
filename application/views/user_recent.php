@@ -11,7 +11,7 @@
 	<?php if(isset($user_recent_data->data)&&count($user_recent_data->data)!=0) { ?>
 	<div class="title">
 		<h2>Recent Media</h2>
-		<h3 style="text-align:center;"><button type="button" onclick="location.href='/user/download/<?php echo $user_recent_data->data[0]->user->id."/".$starting_point;?>/'">Download all on page</button></h3>
+		<h3 style="text-align:center;"><button type="button" onclick="location.href='/user/download/<?php echo $user_recent_data->data[0]->user->id."/".$starting_point;?>/'; this.innerHTML='Downloading...'">Download all on page</button></h3>
 	</div>
 		<div class="popup-gallery">
 		
